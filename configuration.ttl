@@ -1,0 +1,5 @@
+@prefix configuration: <http://www.paradicms.org/ns/configuration#> .
+
+[] a configuration:AppConfiguration;
+  configuration:stylesheetHref <https://minorgordon.net/minorgordon.net.css> 
+  .

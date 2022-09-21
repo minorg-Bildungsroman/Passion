@@ -18,7 +18,7 @@ cd paradicms/gui/loader
 poetry run python3 $ROOT_DIRECTORY_PATH/gui-action/action.py \
     --debug 1 --dev \
     --base-url-path /$COLLECTION \
-    --configuration-file-path $ROOT_DIRECTORY_PATH/Bildungsroman/configuration.json \
+    --configuration-file-path $ROOT_DIRECTORY_PATH/Bildungsroman/configuration.ttl \
     --id Bildungsroman \
     --input-data $ROOT_DIRECTORY_PATH/Bildungsroman/$COLLECTION \
     --input-format markdown \
