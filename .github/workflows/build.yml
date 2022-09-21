@@ -14,7 +14,7 @@ jobs:
           input_data: ./Passion
           input_format: markdown
           output_data: ./.github/pages/Passion
-          output_format: bootstrap-exhibition
+          output_format: exhibition
       - uses: paradicms/gui-action@v1-beta
         with:
           debug: 1
@@ -23,7 +23,7 @@ jobs:
           input_data: ./Thinker-Doer
           input_format: markdown
           output_data: ./.github/pages/Thinker-Doer
-          output_format: bootstrap-exhibition
+          output_format: exhibition
       - uses: peaceiris/actions-gh-pages@v3
         with:
           cname: bildungsroman.minorgordon.net
