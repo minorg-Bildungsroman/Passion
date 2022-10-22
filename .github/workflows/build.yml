@@ -1,5 +1,12 @@
 name: Build
-on: [push, workflow_dispatch]
+on:
+  push:
+    branches: [$default-branch]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   build:
     name: Build
@@ -13,7 +20,7 @@ jobs:
           configuration_file_path: ./configuration.ttl
           input_data: ./Passion
           input_format: markdown
-          output_data: ./.github/pages/Passion
+          output_data: ./_site/Passion
           output_format: exhibition
       - uses: paradicms/action@v1-beta
         with:
@@ -22,10 +29,17 @@ jobs:
           configuration_file_path: ./configuration.ttl
           input_data: ./Thinker-Doer
           input_format: markdown
-          output_data: ./.github/pages/Thinker-Doer
+          output_data: ./_site/Thinker-Doer
           output_format: exhibition
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          cname: bildungsroman.minorgordon.net
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.github/pages
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
