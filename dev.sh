@@ -5,7 +5,7 @@ set -e
 cd `dirname "$(readlink -f "$0")"`/..
 export ROOT_DIRECTORY_PATH=$PWD
 
-export PYTHONPATH=$ROOT_DIRECTORY_PATH/paradicms/etl:$ROOT_DIRECTORY_PATH/paradicms/gui/loader
+export PYTHONPATH=$ROOT_DIRECTORY_PATH/paradicms/etl:$ROOT_DIRECTORY_PATH/paradicms/ssg
 
 #COLLECTION=Passion
 COLLECTION=Thinker-Doer
@@ -14,8 +14,8 @@ COLLECTION=Thinker-Doer
 OUTPUT_DATA=$ROOT_DIRECTORY_PATH/Bildungsroman-gui
 OUTPUT_FORMAT=exhibition
 
-cd paradicms/gui/loader
-poetry run python3 $ROOT_DIRECTORY_PATH/gui-action/action.py \
+cd paradicms/ssg
+poetry run python3 $ROOT_DIRECTORY_PATH/action/action.py \
     --debug 1 --dev \
     --base-url-path /$COLLECTION \
     --configuration-file-path $ROOT_DIRECTORY_PATH/Bildungsroman/configuration.ttl \

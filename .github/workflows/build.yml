@@ -10,7 +10,7 @@ jobs:
         with:
           debug: 1
           base_url_path: /Passion
-          configuration_file_path: ./configuration.json
+          configuration_file_path: ./configuration.ttl
           input_data: ./Passion
           input_format: markdown
           output_data: ./.github/pages/Passion
@@ -19,7 +19,7 @@ jobs:
         with:
           debug: 1
           base_url_path: /Thinker-Doer
-          configuration_file_path: ./configuration.json
+          configuration_file_path: ./configuration.ttl
           input_data: ./Thinker-Doer
           input_format: markdown
           output_data: ./.github/pages/Thinker-Doer
