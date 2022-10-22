@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: paradicms/gui-action@v1-beta
+      - uses: paradicms/action@v1-beta
         with:
           debug: 1
           base_url_path: /Passion
@@ -15,7 +15,7 @@ jobs:
           input_format: markdown
           output_data: ./.github/pages/Passion
           output_format: exhibition
-      - uses: paradicms/gui-action@v1-beta
+      - uses: paradicms/action@v1-beta
         with:
           debug: 1
           base_url_path: /Thinker-Doer
