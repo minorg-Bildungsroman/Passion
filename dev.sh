@@ -2,24 +2,24 @@
 
 set -e
 
-cd `dirname "$(readlink -f "$0")"`/..
-export ROOT_DIRECTORY_PATH=$PWD
+cd `dirname "$(readlink -f "$0")"`
+export PROJECTS_DIRECTORY_PATH=$PWD/..
 
-export PYTHONPATH=$ROOT_DIRECTORY_PATH/paradicms/etl:$ROOT_DIRECTORY_PATH/paradicms/ssg
+export PYTHONPATH=$PROJECTS_DIRECTORY_PATH/paradicms/etl:$PROJECTS_DIRECTORY_PATH/paradicms/ssg
 
 #COLLECTION=Passion
 COLLECTION=Thinker-Doer
 #OUTPUT_DATA=Bildungsroman.ttl
 #OUTPUT_FORMAT=ttl-rdf
-OUTPUT_DATA=$ROOT_DIRECTORY_PATH/Bildungsroman-gui
-OUTPUT_FORMAT=exhibition
+OUTPUT_DATA=$PROJECTS_DIRECTORY_PATH/Bildungsroman-gui
+OUTPUT_FORMAT=multi-page-exhibition
 
-cd paradicms/ssg
-poetry run python3 $ROOT_DIRECTORY_PATH/action/action.py \
+cd $PROJECTS_DIRECTORY_PATH/paradicms/ssg
+poetry run python3 $PROJECTS_DIRECTORY_PATH/paradicms-action/action.py \
     --debug 1 --dev \
     --base-url-path /$COLLECTION \
-    --configuration-file-path $ROOT_DIRECTORY_PATH/Bildungsroman/configuration.ttl \
+    --configuration-file-path $PROJECTS_DIRECTORY_PATH/Bildungsroman/configuration.ttl \
     --id Bildungsroman \
-    --input-data $ROOT_DIRECTORY_PATH/Bildungsroman/$COLLECTION \
+    --input-data $PROJECTS_DIRECTORY_PATH/Bildungsroman/$COLLECTION \
     --input-format markdown \
     --output-data $OUTPUT_DATA --output-format $OUTPUT_FORMAT

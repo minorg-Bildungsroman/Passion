@@ -20,7 +20,7 @@ jobs:
           input_data: ./Passion
           input_format: markdown
           output_data: ./_site/Passion
-          output_format: exhibition
+          output_format: multi-page-exhibition
       - uses: paradicms/action@v1-beta
         with:
           debug: 1
@@ -29,7 +29,7 @@ jobs:
           input_data: ./Thinker-Doer
           input_format: markdown
           output_data: ./_site/Thinker-Doer
-          output_format: exhibition
+          output_format: multi-page-exhibition
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
   deploy:
