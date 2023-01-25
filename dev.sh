@@ -12,7 +12,7 @@ COLLECTION=Thinker-Doer
 #OUTPUT_DATA=Bildungsroman.ttl
 #OUTPUT_FORMAT=ttl-rdf
 OUTPUT_DATA=$PROJECTS_DIRECTORY_PATH/Bildungsroman-gui
-OUTPUT_FORMAT=multi-page-exhibition
+OUTPUT_FORMAT=single-page-exhibition
 
 cd $PROJECTS_DIRECTORY_PATH/paradicms/ssg
 poetry run python3 $PROJECTS_DIRECTORY_PATH/paradicms-action/action.py \
