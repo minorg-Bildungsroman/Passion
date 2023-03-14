@@ -1,8 +1,5 @@
 name: Build and deploy
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+on: [push, workflow_dispatch]
 permissions:
   contents: read
   pages: write
@@ -12,27 +9,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: paradicms/action@v1-beta
+      - uses: actions/configure-pages@v3
+        id: configure_pages
+      - uses: paradicms/markdown-ssg-action@v1-beta
         with:
-          debug: 1
-          base_url_path: /Passion
-          configuration_file_path: ./configuration.ttl
-          input_data: ./Passion
-          input_format: markdown
-          output_data: ./_site/Passion
-          output_format: single-page-exhibition
-      - uses: paradicms/action@v1-beta
+          build_directory_path: _site/Passion
+          markdown_directory_path: Passion
+        env:
+          NEXT_BASE_PATH: ${{ steps.configure_pages.outputs.base_path }}/Passion
+      - uses: paradicms/markdown-ssg-action@v1-beta
         with:
-          debug: 1
-          base_url_path: /Thinker-Doer
-          configuration_file_path: ./configuration.ttl
-          input_data: ./Thinker-Doer
-          input_format: markdown
-          output_data: ./_site/Thinker-Doer
-          output_format: single-page-exhibition
+          build_directory_path: _site/Thinker-Doer
+          markdown_directory_path: Thinker-Doer
+        env:
+          NEXT_BASE_PATH: ${{ steps.configure_pages.outputs.base_path }}/Thinker-Doer
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+        if: ${{ github.ref == 'refs/heads/main' }}
   deploy:
+    if: ${{ github.ref == 'refs/heads/main' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
