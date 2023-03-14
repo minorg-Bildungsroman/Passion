@@ -1,6 +1,6 @@
 ---
 abstract:
-    creator: Steven Levy
+    creatorLiteral: Steven Levy
     rights: http://rightsstatements.org/vocab/InC/1.0/
     rightsHolder: Condé Nast
 creator: md-person:Bill%20Atkinson

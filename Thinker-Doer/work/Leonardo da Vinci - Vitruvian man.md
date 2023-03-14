@@ -1,6 +1,6 @@
 ---
 abstract:
-  creator: Steve Jobs
+  creatorLiteral: Steve Jobs
 creator: md-person:Leonardo%20da%20Vinci
 ---
 

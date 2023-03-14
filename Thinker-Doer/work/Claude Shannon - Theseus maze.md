@@ -1,7 +1,7 @@
 ---
 abstract:
     bibliographicCitation: "Jimmy Soni and Rob Goodman. 2017. A Mind at Play: How Claude Shannon Invented the Information Age. SIMON & SCHUSTER."
-    creator: Jimmy Soni and Rob Goodman
+    creatorLiteral: Jimmy Soni and Rob Goodman
     rights: http://rightsstatements.org/vocab/InC/1.0/
 creator: md-person:Claude%20Shannon
 ---

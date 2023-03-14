@@ -1,7 +1,7 @@
 ---
 abstract:
     bibliographicCitation: "Sieden, Lloyd S, Norman Cousins, and R B. Fuller. Buckminster Fuller's Universe: [his Life and Work]. Cambridge, Mass: Perseus Publ, 2000. Print."
-    creator: "Lloyd Steven Sieden"
+    creatorLiteral: "Lloyd Steven Sieden"
     rights: http://rightsstatements.org/vocab/InC/1.0/
 creator: md-person:Buckminster%20Fuller    
 relation:
