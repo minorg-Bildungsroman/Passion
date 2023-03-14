@@ -2,7 +2,7 @@
 abstract:
     creatorLiteral: Steven Levy
     rights: http://rightsstatements.org/vocab/InC/1.0/
-    rightsHolder: Condé Nast
+    rightsHolderLiteral: Condé Nast
 creator: md-person:Bill%20Atkinson
 relation:
 - http://www.wikidata.org/entity/Q1053749
