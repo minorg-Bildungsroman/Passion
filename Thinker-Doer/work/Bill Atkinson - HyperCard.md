@@ -1,12 +1,12 @@
 ---
 abstract:
     creator: Steven Levy
-    rights: http://rightsstatements.org/vocab/InC/1.0/>
+    rights: http://rightsstatements.org/vocab/InC/1.0/
     rightsHolder: Condé Nast
 creator: md:person:Bill%20Atkinson>
 relation:
-- <http://www.wikidata.org/entity/Q1053749>
-- <http://en.wikipedia.org/wiki/HyperCard>
+- http://www.wikidata.org/entity/Q1053749>
+- http://en.wikipedia.org/wiki/HyperCard>
 ---
 
 > Bill has a radar for the personal angle, and the idea of one person gaining an unearned edge over another is loathsome to him. One-on-one he is an intense communicant. Bill is an eye-contact person, giving you total attention, really wanting to know how you are doing, how you are feeling. He hugs. And he thinks that "business as usual" is no excuse for not doing what's right.
