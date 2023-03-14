@@ -1,8 +1,8 @@
 ---
 abstract:
-    creator: md:person:Jack%20Kerouac
+    creator: md-person:Jack%20Kerouac
     rights: http://rightsstatements.org/vocab/InC/1.0/
-creator: md:person:Vincent%20van%20Gogh
+creator: md-person:Vincent%20van%20Gogh
 relation: http://www.wikidata.org/entity/Q9162658
 ---
 

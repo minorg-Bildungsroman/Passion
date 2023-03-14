@@ -1,9 +1,9 @@
 ---
 abstract:
   bibliographicCitation: "Helen Nearing and Scott Nearing. The Good Life: Helen and Scott Nearing's Sixty Years of Self-Sufficient Living. NY: Schocken Books, 1989."
-  creator: md:person:Helen%20Nearing
+  creator: md-person:Helen%20Nearing
   rights: http://rightsstatements.org/vocab/InC/1.0/>
-creator: md:person:Scott%20Nearing>
+creator: md-person:Scott%20Nearing>
 "foaf:page": http://goodlife.org>
 ---
 

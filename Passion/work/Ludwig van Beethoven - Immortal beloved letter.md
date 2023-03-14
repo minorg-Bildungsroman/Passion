@@ -1,5 +1,5 @@
 ---    
-creator: md:person:Ludwig%20van%20Beethoven
+creator: md-person:Ludwig%20van%20Beethoven
 license: http://creativecommons.org/publicdomain/mark/1.0/
 relation:
 - http://www.wikidata.org/entity/Q1811139

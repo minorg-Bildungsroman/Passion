@@ -1,9 +1,9 @@
 ---
 abstract:
     bibliographicCitation: "Niklaus Wirth. 1985. From programming language design to computer construction. Commun. ACM 28, 2 (Feb. 1985), 160–164. DOI:https://doi.org/10.1145/2786.2789"
-    creator: md:person:Niklaus%20Wirth
+    creator: md-person:Niklaus%20Wirth
     rights: http://rightsstatements.org/vocab/InC/1.0/>
-creator: md:person:Niklaus%20Wirth>
+creator: md-person:Niklaus%20Wirth>
 relation:
 - http://www.wikidata.org/entity/Q278299>
 - http://en.wikipedia.org/wiki/Lilith_(computer)>

@@ -1,10 +1,10 @@
 ---
 abstract:
   bibliographicCitation: "Augmenting Human Intellect: A Conceptual Framework. Douglas C. Engelbart, Summary Report, Stanford Research Institute, on Contract AF 49(638)-1024, October 1962, 134 pages. (AUGMENT,3906,)."
-  creator: md:person:Douglas%20Engelbart>
+  creator: md-person:Douglas%20Engelbart>
   relation: http://dougengelbart.org/content/view/138/>
   rights: http://rightsstatements.org/vocab/InC/1.0/>
-creator: md:person:Douglas%20Engelbart>
+creator: md-person:Douglas%20Engelbart>
 relation:
 - http://www.wikidata.org/entity/Q3521932>
 - http://en.wikipedia.org/wiki/The_Mother_of_All_Demos>
