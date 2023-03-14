@@ -1,6 +1,6 @@
 ---    
-creator: <md:person:Ludwig%20van%20Beethoven>
-license: <http://creativecommons.org/publicdomain/mark/1.0/>
+creator: md:person:Ludwig%20van%20Beethoven>
+license: http://creativecommons.org/publicdomain/mark/1.0/>
 relation:
 - <http://www.wikidata.org/entity/Q1811139>
 - <http://en.wikipedia.org/wiki/Immortal_Beloved>

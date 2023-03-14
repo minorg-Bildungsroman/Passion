@@ -1,9 +1,9 @@
 ---
 abstract:
     creator: Steven Levy
-    rights: <http://rightsstatements.org/vocab/InC/1.0/>
+    rights: http://rightsstatements.org/vocab/InC/1.0/>
     rightsHolder: Condé Nast
-creator: <md:person:Bill%20Atkinson>
+creator: md:person:Bill%20Atkinson>
 relation:
 - <http://www.wikidata.org/entity/Q1053749>
 - <http://en.wikipedia.org/wiki/HyperCard>

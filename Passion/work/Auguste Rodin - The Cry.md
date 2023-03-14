@@ -1,8 +1,8 @@
 ---
 abstract:
-    creator: <md:person:Rainer%20Maria%20Rilke>
-    license: <http://creativecommons.org/publicdomain/mark/1.0/>
-creator: <md:person:Auguste%20Rodin>
+    creator: md:person:Rainer%20Maria%20Rilke>
+    license: http://creativecommons.org/publicdomain/mark/1.0/>
+creator: md:person:Auguste%20Rodin>
 ---
 
 > Who, if I cried out, would hear me among the Angelic  

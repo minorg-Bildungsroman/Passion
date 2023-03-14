@@ -2,8 +2,8 @@
 abstract:
     bibliographicCitation: "Alexander, Christopher (1979). The Timeless Way of Building. Oxford University Press. ISBN 978-0-19-502402-9."
     creator: "Christopher Alexander"
-    rights: <http://rightsstatements.org/vocab/InC/1.0/>
-creator: <md:person:Christopher%20Alexander>
+    rights: http://rightsstatements.org/vocab/InC/1.0/>
+creator: md:person:Christopher%20Alexander>
 relation:
 - <http://www.wikidata.org/entity/Q18753095>
 - <http://en.wikipedia.org/wiki/Sala_House>

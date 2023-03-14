@@ -1,9 +1,9 @@
 ---
 abstract:
     bibliographicCitation: "Maurice V. Wilkes. Computers then and now. ACM Turing award lectures. Association for Computing Machinery, New York, NY, USA, 1967. DOI:https://doi.org/10.1145/1283920.1283922"
-    creator: <md:person:Maurice%20Wilkes>
-    rights: <http://rightsstatements.org/vocab/InC/1.0/>
-creator: <md:person:Alan%20Turing>
+    creator: md:person:Maurice%20Wilkes>
+    rights: http://rightsstatements.org/vocab/InC/1.0/>
+creator: md:person:Alan%20Turing>
 relation:
 - <http://www.wikidata.org/entity/Q937690>
 - <http://en.wikipedia.org/wiki/Pilot_ACE>
