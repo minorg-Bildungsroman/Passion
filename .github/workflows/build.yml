@@ -11,16 +11,28 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/configure-pages@v3
         id: configure_pages
-      - uses: paradicms/markdown-ssg-action@v1-beta
+      - uses: paradicms/directory-etl-action@v1-beta
         with:
-          build_directory_path: _site/Passion
-          markdown_directory_path: Passion
+          cache_directory_path: Passion/.paradicms/data/cache
+          loaded_data_directory_path: Passion/.paradicms/data/loaded
+          input_directory_path: Passion
+      - uses: paradicms/ssg-action@v1-beta
+        with:
+          cache_directory_path: Passion/.paradicms/data/cache
+          data_paths: Passion/.paradicms/data/loaded
+          site_directory_path: _site/Passion
         env:
           NEXT_BASE_PATH: ${{ steps.configure_pages.outputs.base_path }}/Passion
-      - uses: paradicms/markdown-ssg-action@v1-beta
+      - uses: paradicms/directory-etl-action@v1-beta
         with:
-          build_directory_path: _site/Thinker-Doer
-          markdown_directory_path: Thinker-Doer
+          cache_directory_path: Thinker-Doer/.paradicms/data/cache
+          loaded_data_directory_path: Thinker-Doer/.paradicms/data/loaded
+          input_directory_path: Thinker-Doer
+      - uses: paradicms/ssg-action@v1-beta
+        with:
+          cache_directory_path: Thinker-Doer/.paradicms/data/cache
+          data_paths: Thinker-Doer/.paradicms/data/loaded
+          site_directory_path: _site/Thinker-Doer
         env:
           NEXT_BASE_PATH: ${{ steps.configure_pages.outputs.base_path }}/Thinker-Doer
       - name: Upload artifact
