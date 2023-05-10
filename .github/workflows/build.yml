@@ -12,29 +12,9 @@ jobs:
       - uses: actions/configure-pages@v3
         id: configure_pages
       - uses: paradicms/directory-etl-action@v1-beta
-        with:
-          cache_directory_path: Passion/.paradicms/data/cache
-          loaded_data_directory_path: Passion/.paradicms/data/loaded
-          input_directory_path: Passion
       - uses: paradicms/ssg-action@v1-beta
-        with:
-          cache_directory_path: Passion/.paradicms/data/cache
-          data_paths: Passion/.paradicms/data/loaded
-          site_directory_path: _site/Passion
         env:
-          NEXT_BASE_PATH: ${{ steps.configure_pages.outputs.base_path }}/Passion
-      - uses: paradicms/directory-etl-action@v1-beta
-        with:
-          cache_directory_path: Thinker-Doer/.paradicms/data/cache
-          loaded_data_directory_path: Thinker-Doer/.paradicms/data/loaded
-          input_directory_path: Thinker-Doer
-      - uses: paradicms/ssg-action@v1-beta
-        with:
-          cache_directory_path: Thinker-Doer/.paradicms/data/cache
-          data_paths: Thinker-Doer/.paradicms/data/loaded
-          site_directory_path: _site/Thinker-Doer
-        env:
-          NEXT_BASE_PATH: ${{ steps.configure_pages.outputs.base_path }}/Thinker-Doer
+          NEXT_BASE_PATH: ${{ steps.configure_pages.outputs.base_path }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         if: ${{ github.ref == 'refs/heads/main' }}
