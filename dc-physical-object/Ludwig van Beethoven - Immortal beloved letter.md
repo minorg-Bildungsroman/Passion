@@ -1,6 +1,7 @@
 ---    
 creator: md-foaf-person:Ludwig%20van%20Beethoven
 description:
+    "@type": http://purl.org/dc/dcmitype/Text
     license: http://creativecommons.org/publicdomain/mark/1.0/
 sameAs: http://www.wikidata.org/entity/Q1811139
 ---

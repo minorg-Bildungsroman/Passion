@@ -1,6 +1,7 @@
 ---
 creator: md-foaf-person:Vincent%20van%20Gogh
 description:
+  "@type": http://purl.org/dc/dcmitype/Text
   creator: md-foaf-person:Jack%20Kerouac
   rights: http://rightsstatements.org/vocab/InC/1.0/
 sameAs: http://www.wikidata.org/entity/Q9162658

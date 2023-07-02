@@ -1,6 +1,7 @@
 ---
 creator: md-foaf-person:Auguste%20Rodin
 description:
+    "@type": http://purl.org/dc/dcmitype/Text
     creator: md-foaf-person:Rainer%20Maria%20Rilke
     license: http://creativecommons.org/publicdomain/mark/1.0/
 ---
