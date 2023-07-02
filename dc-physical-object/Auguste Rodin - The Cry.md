@@ -1,7 +1,7 @@
 ---
 creator: md-foaf-person:Auguste%20Rodin
 description:
-    creator: md-person:Rainer%20Maria%20Rilke
+    creator: md-foaf-person:Rainer%20Maria%20Rilke
     license: http://creativecommons.org/publicdomain/mark/1.0/
 ---
 
